@@ -1,11 +1,5 @@
 from datetime import datetime
 from pprint import pprint
-# import logging
-import json
-
-# def setLogging(msg):
-#     logging.basicConfig(filename='chat.log', level=logging.DEBUG)
-#     logging.debug(msg)
 
 def logger(type, msg, line):
     ddate = datetime.now()

@@ -1,6 +1,5 @@
 import os
 import json
-import mysql.connector
 from datetime import date, time, datetime
 import numpy as np
 
@@ -16,9 +15,11 @@ apiPath = APIPATH
 headers = {'user-agent': '6UG8Bot / 0.0.2', 'Content-type': 'application/json'}
 
 def getApi(sql, args = None):
+    logger("SQL", sql + json.dumps(args), "CONTROLLER.LN.18")
     params = {'sql':sql, "args": args}
     res = requests.get(apiPath, headers=headers, params=params)
     response = json.loads(res.text)
+    logger("RESPONSE", json.dumps(response), "CONTROLLER.LN.22")
     return response
 
 def switchIAbot():
@@ -187,7 +188,7 @@ def getDictionary(findText, largo, obj, author, idUser, bot, chat_id, modeBot):
     
     hora_completa  = ddate.strftime("%H:%M:%S")
     
-    fecha_hora = f"{ddate.strftime("%Y%m%d_%H%M%S")}"
+    fecha_hora = f"{ddate.strftime('%Y%m%d_%H%M%S')}"
     
     tiempo = ""
     
@@ -268,13 +269,15 @@ def getDictionary(findText, largo, obj, author, idUser, bot, chat_id, modeBot):
                 document = open("temp/"+file_name, "rb")
                 
                 bot.sendDocument(chat_id, document)
+                
+                logger("DEBUG", "Se entrega informacion en archivo: " + file_name, "CONTROLLER.LN.273")
                     
                 toSend = "Aqui la información solicitada. \n/menu - Regresar."
     
                 return toSend 
             
             else:
-                logger("ERROR", respQ["message"], "CONTROLLER.LN.273")
+                logger("ERROR", respQ["message"], "CONTROLLER.LN.280")
                 return "ERROR"
             
         elif row[0] == "M":

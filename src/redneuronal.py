@@ -5,7 +5,10 @@ from sklearn.naive_bayes import MultinomialNB
 from src.controller import  capasNeuronales
 from src.utils import logger
 
-# nltk.download('punkt')
+# Se debe activar cada primera vez o cambio de maquina de pc o lugar donde se corre, luego se debe comentar
+# nltk.download()  # despliega el menu
+# nltk.download('punkt') 
+# nltk.download('punkt_tab') 
     
 def analyzingTextRN(chat_id, bot, frase):
     module = "redneuronal.analyzingText.FN."

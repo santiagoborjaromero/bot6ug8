@@ -129,7 +129,7 @@ def checkTemps():
     try:
         with os.scandir(directorio) as ficheros:
             for fichero in ficheros:
-                print(f"temp/{fichero.name}")
+                print(f"temp/{fichero.name} ... eliminado del temp")
                 os.remove(f"temp/{fichero.name}")
     except OSError as error:
         print(f"Error al eliminar el archivo: {error}")

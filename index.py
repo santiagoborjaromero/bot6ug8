@@ -9,7 +9,7 @@ import os
 
 import config.init
 
-os.system('cls')
+os.system('clear')
 
 from config.init import TELEGRAM_TOKEN
 from src.bridgecontroller import processing
@@ -25,7 +25,18 @@ def handle(msg):
    
 
 if __name__ == "__main__":
-    print ('Soy 6GU8BOT v0.2, comencemos')
+    print ('************************************')
+    print ('**                                **')
+    print ('**       Soy 6GU8BOT v0.2         **')
+    print ('**                                **')
+    print ('** puedes vincularme con el link  **')
+    print ('** t.me/SextoG8Bot                **')
+    print ('**                                **')
+    print ('************************************')
+    print ('** Etapa de pruebas               **')
+    print ('************************************')
+    print ('Comencemos, dispara')
+    
     
     MessageLoop(bot, handle).run_as_thread()
     print ('Escuchando ...')
