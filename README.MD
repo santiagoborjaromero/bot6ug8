@@ -52,7 +52,7 @@ Descripcion de archivos
 #Archivo de inicio
 index.py
 
-# Configuracion de telegram token, gemini, base de datos
+# Configuracion de telegram token, direccion api base de datos
 config/init.py 
 
 #Conexion con base de datos y consultas

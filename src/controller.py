@@ -4,7 +4,7 @@ import mysql.connector
 from datetime import date, time, datetime
 import numpy as np
 
-from config.init import DBUSER, DBPASS, DBHOST, DB, APIPATH
+from config.init import APIPATH
 from pprint import pprint
 from src.utils import logger, open_file
 import requests
