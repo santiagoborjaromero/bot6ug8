@@ -4,5 +4,5 @@ TELEGRAM_TOKEN = "7245878740:AAGCGDb-KPwMmsaBZaPWTddbFr0uBmvhAtc"
 # DBHOST = 'localhost'
 # DB = 'diproavilm'
 
-APIPATH = "http://api6ug8.diproavilm.com/?ruta=botrequest"
+APIPATH = "http://api.diproavilm.com/?ruta=botrequest"
 
