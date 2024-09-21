@@ -32,7 +32,7 @@ python.exe -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-###  Cómo obtener un respaldo de librerias?
+###  Cómo generar un respaldo de librerias?
 ```js
 pip freeze > requirements.txt
 ```
