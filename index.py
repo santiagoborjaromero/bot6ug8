@@ -25,21 +25,21 @@ def handle(msg):
    
 
 if __name__ == "__main__":
-    print ('************************************')
-    print ('**                                **')
-    print ('**       Soy 6GU8BOT v0.2         **')
-    print ('**                                **')
-    print ('** puedes vincularme con el link  **')
-    print ('** t.me/SextoG8Bot                **')
-    print ('**                                **')
-    print ('************************************')
-    print ('** Etapa de pruebas               **')
-    print ('************************************')
-    print ('Comencemos, dispara')
+    print ('  ************************************')
+    print ('  **                                **')
+    print ('  **       Soy 6GU8BOT v0.2         **')
+    print ('  **                                **')
+    print ('  ** puedes vincularme con el link  **')
+    print ('  ** t.me/SextoG8Bot                **')
+    print ('  **                                **')
+    print ('  ************************************')
+    print ('  ** Etapa de pruebas               **')
+    print ('  ************************************')
+    print ('  Comencemos, dispara')
     
     
     MessageLoop(bot, handle).run_as_thread()
-    print ('Escuchando ...')
+    print ('  Escuchando ...')
 
     while 1:
         time.sleep(10)

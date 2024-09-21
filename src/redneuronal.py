@@ -39,7 +39,15 @@ def analyzingTextRN(chat_id, bot, frase):
     try:
         X_nueva = vectorizer.transform([frase])
         prediccion = modelo.predict(X_nueva)[0]
-        print(f"Predicción para '{frase}': {prediccion}")
+        print ('  ************************************')
+        print ('  **  RED NEURONAL PREDICCION       **')
+        print ('  ************************************')
+        print ('     Texto ingresado:')
+        print (f"        {frase}")
+        print ('     Prediccion realizada:')
+        print (f"        {prediccion}")
+        print ('  ************************************')
+        # print(f"Predicción para '{frase}': {prediccion}")
         return prediccion
     except Exception as err:
         print("[X]", err)
