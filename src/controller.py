@@ -238,8 +238,8 @@ def getDictionary(findText, largo, obj, author, idUser, bot, chat_id, modeBot):
             if (respQ["status"]=="ok"):
                 
                 rs = respQ["message"]
-                if len(rs) == 0:
-                    return "No existen registros de " + findText + ", se encuentra vacío. \n\n/menu - Muestra las opciones del menu principal."
+                if rs == None:
+                    return "No existen registros de " + findText + ". \n\n/menu - Muestra las opciones del menu principal."
             
                 primerRegistro = rs[0]
                 cols = []
